@@ -38,7 +38,7 @@ pthread_mutex_t logmutex;
 #define	ALOG_TQ			(unsigned long int)(1 << 7 )
 #define	ALOG_TSQ		(unsigned long int)(1 << 8 )
 #define	ALOG_TTHR		(unsigned long int)(1 << 9 )
-#define	ALOG_INTERNAL	(unsigned long int)(1 << 10 )
+#define	ALOG_INTERNAL		(unsigned long int)(1 << 10 )
 #define	ALOG_TCONC		(unsigned long int)(1 << 11 )
 #define	ALOG_TLCK		(unsigned long int)(1 << 12 )
 #define	ALOG_TERR		(unsigned long int)(1 << 13 )
@@ -61,24 +61,24 @@ public:
 #ifndef ALOG_H_
 #define ALOG_H_
 
-#define LOGOG_LEVEL_NONE		0
+#define LOGOG_LEVEL_NONE	0
 #define LOGOG_LEVEL_INTERNAL	8
-#define LOGOG_LEVEL_ALERT		16
+#define LOGOG_LEVEL_ALERT	16
 #define LOGOG_LEVEL_CRITICAL	24
-#define LOGOG_LEVEL_ERROR		32
-#define LOGOG_LEVEL_WARN		40
-#define LOGOG_LEVEL_WARN1		48
-#define LOGOG_LEVEL_WARN2		56
-#define LOGOG_LEVEL_WARN3		64
-#define LOGOG_LEVEL_INFO		72
-#define LOGOG_LEVEL_DEBUG		80
-#define LOGOG_LEVEL_ALL			88
+#define LOGOG_LEVEL_ERROR	32
+#define LOGOG_LEVEL_WARN	40
+#define LOGOG_LEVEL_WARN1	48
+#define LOGOG_LEVEL_WARN2	56
+#define LOGOG_LEVEL_WARN3	64
+#define LOGOG_LEVEL_INFO	72
+#define LOGOG_LEVEL_DEBUG	80
+#define LOGOG_LEVEL_ALL		88
 //! [Level Constants]
 
 #define LOGOG_LEVEL_TYPE		int
 
 #ifndef LOGOG_LEVEL
-#define LOGOG_LEVEL LOGOG_LEVEL_ALL
+#define LOGOG_LEVEL LOGOG_LEVEL_ALERT
 #endif
 
 #define LOGOG_GROUP 1
