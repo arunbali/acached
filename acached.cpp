@@ -66,10 +66,9 @@ int main(int argc, char *argv[]) {
 	//exit(1);
 
 	pthread_mutex_init(&(logmutex), NULL);
-	aLog.Init(ALOG_DALL | ALOG_MSG | ALOG_TMSG);
-	aLog.Init(
-			ALOG_INFO | ALOG_INTERNAL | ALOG_TCONC | ALOG_TLCK | ALOG_TMSG
-					| ALOG_TCONN);
+	aLog.Init(ALOG_INFO);
+	/*
+	aLog.Init( ALOG_INFO | ALOG_INTERNAL | ALOG_TCONC | ALOG_TLCK | ALOG_TMSG | ALOG_TCONN);
 	aLog.Init(ALOG_TCONN);
 
 	aLog.Init(ALOG_INTERNAL | ALOG_INFO | ALOG_ALERT | ALOG_TERR | ALOG_PARSE);
@@ -80,6 +79,7 @@ int main(int argc, char *argv[]) {
 	aLog.Init(ALOG_TERR);
 	aLog.Init(ALOG_TCONN | ALOG_TMSG | ALOG_MEM);
 	aLog.Init(ALOG_TCONC);
+	*/
 	//event_enable_debug_logging(EVENT_DBG_ALL);
 	printf("\nLIBEVENT VERSION:%u(%s)\n", event_get_version_number(),
 			event_get_version());
